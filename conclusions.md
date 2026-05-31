@@ -51,8 +51,6 @@ El model final (`firm-sweep-24`) combina totes les decisions que, una a una, han
 
 Sabem que el model es pot millorar encara més, però per temps i coneixement considerem que hem assolit un resultat molt satisfactori per al nivell del projecte:
 
-**Entrenar amb el 100% del dataset**: hem treballat amb el 40% per raons de cost computacional. L'execució final de 150 epochs amb el 40% ens donarà una indicació, però és probable que el dataset complet millori significativament R@1 i R@10.
-
 **Data Augmentation**: aplicar transformacions aleatòries a les imatges de còmic durant el training (rotació, color jitter, crop) augmentaria la variabilitat del dataset efectiu i reduiria l'overfitting.
 
 **Explorar ResNet50 vs ViT**: els Vision Transformers han superat ResNet50 en molts benchmarks visuals. Un encoder ViT preentrenat podria capturar millor l'estil específic dels còmics.
@@ -91,4 +89,4 @@ Un MRR de 0.090 indica que, tot i la penalització severa que imposa aquesta mè
 
 ### 6.4 Per qué el run de 150 epochs dóna R@10=0.195 i no 0.233?
 
-El 0.2328 era el pic d'un epoch concret del sweep (20 epochs). En 150 epochs el model convergeix a un valor estable. La train/epoch_loss baixa de 0.35 a 0.087 sense signes d'overfitting (la val/R@10 segueix pujant monotònicament), cosa que confirma que el model ha après correctament i que 0.1946 és el màxim real assolible amb aquesta configuració i el 40% de les dades.
+El 0.2328 era el pic d'un epoch concret del sweep (20 epochs). En 150 epochs el model convergeix a un valor estable. La train/epoch_loss baixa de 0.35 a 0.087 sense signes d'overfitting (la val/R@10 segueix pujant monotònicament), cosa que confirma que el model ha après correctament i que 0.1946 és el màxim real assolible amb aquesta configuració.

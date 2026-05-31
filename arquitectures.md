@@ -150,7 +150,6 @@ MRR és sensible a la posició exacta: un model que sempre retorna la imatge cor
 | Optimitzador | AdamW, lr=1e-4, weight_decay=0.1 |
 | Batch size | 64 |
 | CLIP threshold | 0.29 (només training) |
-| Subset training | 40% del dataset |
 | Epochs (run final) | 150 |
 | Millor R@1 (sweep) | 0.0458 |
 | Millor R@10 (sweep) | 0.2328 |

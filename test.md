@@ -38,7 +38,7 @@ python final_main.py
 El script et demanarà les credencials de WandB la primera vegada. Introdueix la teva API key quan la demani (la trobes a [wandb.ai/settings](https://wandb.ai/settings)).
 
 **Què fa**:
-1. Carrega el 40% del dataset de training filtrat per CLIP (threshold 0.29)
+1. Carrega el dataset de training filtrat per CLIP (threshold 0.29)
 2. Construeix el model: SentenceBERT (totalment congelat) + ResNet50 (layer4 entrenable)
 3. Entrena 150 epochs amb TripletMarginLoss (margin=0.4), lr=1e-4, AdamW weight_decay=0.1
 4. Cada epoch calcula R@1, R@10 i MRR al validation set complet

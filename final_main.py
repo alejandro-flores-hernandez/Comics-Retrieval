@@ -32,7 +32,6 @@ config_dict = {
     "dataset":        "ComicsPAP",
     "architecture":   "ResNet50-SBERTcongelat-TripletLoss",
     "weight_decay":   0.1, 
-    "subset_fraction": 0.40, 
 }
 
 SAVE_PATH = os.path.join(script_dir, "trained_models", "model_final_150ep.pth")
