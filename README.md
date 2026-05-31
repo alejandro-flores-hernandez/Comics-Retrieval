@@ -13,7 +13,6 @@ A partir de l'exploració d'hiperparàmetres realitzada amb els Sweeps de **Weig
 * **Recall@1:** 0.0458
 * **Recall@10:** 0.1946
 * **MRR (Mean Reciprocal Rank):** 0.0900
-* **CLIP Threshold aplicat:** 0.29
 
 ---
 
@@ -76,10 +75,12 @@ python final_main.py
 
 Paràmetres utilitzats:
 
-* Batch Size = 32
+* Batch Size = 64
 * Learning Rate = 1e-4
 * Margin = 0.4
 * Epochs = 150
+* CLIP Threshold aplicat: 0.29
+
 
 ---
 
